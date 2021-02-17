@@ -20,8 +20,8 @@ namespace Consumer
                      {
                          var body = ea.Body.Span;
                          var message = Encoding.UTF8.GetString(body);
-                         Console.WriteLine("Recived Meaages{0}...",message);
-                     };
+                         Console.WriteLine("Recived message{0}...", message);
+                     }; 
                     channel.BasicConsume("BasicTest", true, Consumer);
                     Console.WriteLine("Press [Enter] to Exit");
                     Console.ReadLine();
